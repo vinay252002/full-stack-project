@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Sofia;
+  font-size: 22px;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="pictures/img-28.jpg" alt="Mail">
+    <h2>Mail to:</h2>
+    <address>
+       <a href="mailto:sm6125@srmist.edu.in">Press me to send mail</a><br> 
+    </address>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="pictures/img-30.png" alt="Call">
+    <h2>Contact:</h2>
+    <p style="color:yellow;">9618948555</p>
+  </div>
+</div>
+     
+</body>
+</html> 

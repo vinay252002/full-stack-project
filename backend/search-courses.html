@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: url(pictures/img-20.jpg);
+  width: 100%;
+  height:324px;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+#example1 {
+  background-image: url(pictures/img-23.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 35px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>To explore</h1>
+  <p>My work starts</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Programming</a>
+  <a href="#">Core cse</a>
+  <a href="#">speialisation</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About courses</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>can access programming related or core computer related etc.</p>
+    <h3>More to view</h3>
+    <p>Programming related</p>
+    <div class="fakeimg" style="height:161px; background-image: url(pictures/img-35.png);"">Image</div><br>
+    <div class="fakeimg" style="height:300px; background-image: url(pictures/img-36.png);">Image</div><br>
+    <div class="fakeimg" style="height:300px; background-image: url(pictures/img-37.png);">Image</div>
+  </div>
+  
+  <div class="main">
+    <h3>Extra core computer related</h3>
+    <div class="fakeimg" style=" background-image: url(pictures/img-30.jpg);">Image</div>
+    <p>Includes subjects related to all specialisations of cse field and also the subjects of core cse apart from programming point of view.</p>
+    
+    <div id="example1">
+    <h3>This includes</h3>
+     <ul>
+       <li>Computer organisation and architecture</li>
+       <li>Operating systems</li>
+       <li>Data base management system</li>
+       <li>Data structures</li>
+       <li>Algorithms design</li>
+     </ul>  
+    </div>
+    <br>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+

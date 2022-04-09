@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('pictures/img-7.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.tab-1 {
+  overflow: hidden;
+  border: 5px solid #ccc;
+  background-color: black;
+}
+
+.tab-1 button {
+  color: white;
+  background-color: green;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab-1 button:hover {
+  background-color: grey;
+}
+
+.tab-1 button.active {
+  background-color: Brown;
+}
+
+.tabcontent-1 {
+  background-color: Moccasin;
+  display: none;
+  padding: 50px 50px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 29px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="pg-2.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="pg-aboutus.html"><i class="fa fa-fw fa-search"></i> About Us</a>
+  <a href="search-courses.html"><i class="fa fa-fw fa-search"></i> Search Cources</a> 
+  <a href="pg-contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="payment.html"><i class="fa fa-fw fa-user"></i> User Payment</a>
+</div>
+<h1 style="text-align:center;">Come on and go around and explore</h1>
+
+</body>
+</html> 
