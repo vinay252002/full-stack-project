@@ -1,1 +1,1 @@
-# full-stack-project
+# Online Course Platform
